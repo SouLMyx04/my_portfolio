@@ -1,0 +1,223 @@
+.Project{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=============== Containers ===============*/
+.project-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:100px;
+}
+.projects{
+    font-size: 2.100rem;
+    color: #E0E0E0;
+}
+.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;    
+}
+.cruds, .responsive-website, .maps-navigation, .payment-gateway{
+    background-color: #E0E0E0;
+    height: 330px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap:5px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 15px 5px 10px 5px; /* top right bottom left */
+    box-shadow: 1px 1px 5px #B0B0B0;
+}
+
+.cruds:hover, .responsive-website:hover, .maps-navigation:hover, .payment-gateway:hover{
+    transform: scale(1.02);
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    cursor: pointer;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.video-container video{
+    height: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-info{
+    font-family: system-ui,sans-serif;
+    height: 150px;
+    width: 95%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 18px;
+
+    .info{
+        font-weight: 400;
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .project-container{
+        gap: 0;
+    }
+
+    .projects-container{
+        flex-wrap: wrap;
+    }
+
+    .projects{
+        position:relative;
+        bottom: 20px;
+    }
+}
+
+
+/*=============== Modal ===============*/
+.popup-video{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 100;
+    background: rgba(0,0,0, .8);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.popup-video video{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 46.875rem; 
+    border-radius: 5px;
+    border:3px solid #fff;
+    object-fit: cover;
+    background-color: gray;
+}
+
+.popup-video span{
+    position: fixed;
+    top: 190px; right: 520px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1645px){
+  .popup-video span{
+    position: absolute;
+    top: 5px; right: 20px;
+  }
+}
+
+@media screen and (max-width: 835px){
+  .popup-video video{
+    width: 90%;
+  }
+}
+
+
+/*=============== Swiper ===============*/
+
+.swiper {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.swiper-pagination {
+  position: relative;  /* para nasa ilalim ng slides */
+  margin-top: -50px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;      /* kulay ng dot */
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #007aff;   /* kulay kapag active */
+  opacity: 1;
+}
+
+
+
+@media only screen and (min-width: 769px) {
+  .swiper-slide:first-child {
+    transition: transform 100ms;
+  }
+
+  .swiper-slide:first-child img {
+    transition: box-shadow 500ms;
+  }
+
+  .swiper-slide.swiper-slide-active:first-child {
+    transform: translateX(50%);
+    z-index: 2;
+  }
+
+  .swiper-slide.swiper-slide-active:first-child img {
+    box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+  }
+
+  .swiper-slide:nth-child(2) {
+    transition: transform 100ms;
+  }
+
+  .swiper-slide.swiper-slide-next:nth-child(2) {
+    transform: translateX(55%);
+    z-index: 1;
+  }
+
+  .swiper[dir='rtl'] .swiper-slide.swiper-slide-active:first-child {
+    transform: translateX(-50%);
+  }
+
+  .swiper[dir='rtl'] .swiper-slide.swiper-slide-next:nth-child(2) {
+    transform: translateX(-55%);
+  }
+
+  
+}

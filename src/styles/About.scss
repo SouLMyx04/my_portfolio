@@ -1,0 +1,62 @@
+/*=============== THE ABOUT CONTAINER ===============*/
+.About{
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About_container{
+    height: 75%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1150px){
+    .About_container{
+        flex-wrap: wrap;
+    }
+}
+
+/*=============== IMAGE ===============*/
+.Raffy{
+    height: 50vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 30px;
+    filter: drop-shadow(1px 1px 5px #E0E0E0);
+}
+
+@media screen and (max-width: 1150px) {
+    .Raffy{
+        display: none;
+    }
+}
+
+/*=============== ABOUT DETAIL ===============*/
+.Detail{
+    font-family: system-ui,sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    padding: 1em;
+    max-width: 800px;
+    color: #B0B0B0;
+}
+.About_me{
+    font-size: 2.100rem;
+    color: #E0E0E0;
+}
+.Paragraph{
+    text-align: justify;
+}
+
+/*=============== Line ===============*/
+.Line{
+    height: 1px;
+    background: rgb(110, 108, 108);
+    margin-bottom: 10px;
+}
+

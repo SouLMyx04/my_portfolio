@@ -1,0 +1,93 @@
+/*=============== THE ABOUT CONTAINER ===============*/
+.Skill{
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/img/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Skill_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,
+    #121212 43%,
+    #121212B3 70%,  /* B3 = 70% opacity */
+    #12121266 100%,  /* 66 = 40% opacity */
+    #12121200 100%  /* 00 = 0% opacity */
+    );
+}
+
+.Skills{
+    font-size: 2.100rem;
+    color: #E0E0E0;
+}
+
+.Logo_container{
+    height: 75%;
+    width: 75%;
+    gap: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@media screen and (max-width: 787px){
+    .Skill_container{
+        gap:70px;
+        background-image: linear-gradient(to right,
+        #121212 50%,
+        #121212B3 70%,  /* B3 = 70% opacity */
+        #12121266 100%,  /* 66 = 40% opacity */
+        #12121200 100%  /* 00 = 0% opacity */
+        );
+    }
+}
+
+/*=============== Icon ===============*/
+.Icon_container{
+    font-family: system-ui,sans-serif;
+    font-size: 1.125rem;
+}
+.Icon{
+    height: 10.625rem;
+    width: 10.625rem;
+}
+.Icon_text{
+    text-align: center;
+    color: #B0B0B0;
+}
+
+@media screen and (max-width: 1440px){
+    .Icon{
+        height: 8rem;
+        width: 8rem;
+    }
+    
+}
+
+@media screen and (max-width: 1150px){
+    .Icon{
+        height: 6rem;
+        width: 6rem;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .Skill_container{
+        gap:20px;
+    }
+    .Icon{
+        height: 4rem;
+        width: 4rem;
+    }
+}

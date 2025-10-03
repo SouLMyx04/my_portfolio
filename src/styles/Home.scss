@@ -1,0 +1,222 @@
+.home{
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/img/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Home_container{
+    font-family: system-ui,sans-serif;
+    padding:13.75rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:40px;
+    background-image: linear-gradient(to right,
+    #121212 43%,
+    #121212B3 70%,  /* B3 = 70% opacity */
+    #12121266 100%,  /* 66 = 40% opacity */
+    #12121200 100%  /* 00 = 0% opacity */
+    );
+}
+
+@media screen and (max-width: 1150px){
+    .Home_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        height: 100%;
+        width: 100%;
+        padding:0;
+        background-image: linear-gradient(to right,
+        #121212 50%,
+        #121212B3 70%,  /* B3 = 70% opacity */
+        #12121266 100%,  /* 66 = 40% opacity */
+        #12121200 100%  /* 00 = 0% opacity */
+        );
+        gap:0;
+    }
+    .intro{
+        text-align: justify;
+    }
+
+}
+
+/* ============== Picture ==================== */
+.Avatar, .Avatar_01{
+    width: 20.3125rem;
+    height: 20.3125rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1150px){
+    .Avatar, .Avatar_01{
+        height: 15rem;
+        width: 15rem;
+    }
+    .Avatar{
+        position: relative;
+        top: 100px;
+    }
+}
+
+/* ============== Paragraph ==================== */
+.Paragraph_container{
+    width: 70%;
+    height: 28.8125rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.intro{
+    color:#E0E0E0;
+    display: flex;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1150px){
+    .Paragraph_container{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: auto;
+        width: 80%;
+        position: relative;
+        bottom: 40px;
+    }
+
+}
+
+
+/* ============== Icon ==================== */
+.nav__social {
+  display: flex;
+}
+
+.nav__social {
+  column-gap: 1rem;
+}
+
+.nav__social-link {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  transition: transform .4s;
+}
+
+.nav__social-link:hover {
+  transform: translateY(-.25rem);
+}
+
+/* ============== Animation ==================== */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(100%); 
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); 
+    opacity: 1;
+  }
+}
+
+.Sentence-01{
+  animation: slideFromLeft 0.5s ease-out forwards;
+  animation-delay: 0s;   
+  font-size: 2.8125rem;
+  color: #197278;
+  font-weight: 700;
+}
+
+.Sentence-02{
+  animation: slideFromLeft 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+  font-size: 4.6875rem;
+  color: #F2F0EF;
+  font-weight: 700;
+}
+
+.animated-text{
+    font-size: 25px;
+    font-weight: 600;
+    min-width: 280px;
+    font-weight: 700;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Subject Matter Expert";
+    color: #c44536;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #121212;
+    border-left: 2px solid #c44536;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@media screen and (max-width: 675px){
+    .Sentence-01{
+        font-size: 2rem;
+    }
+    .Sentence-02{
+        font-size: 3rem;
+    }
+    .animated-text{
+        font-size: 1.3rem;
+    }
+
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #121212;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Back-end Developer";
+    }
+    21%,40%{
+        content: "Subject Matter Expert";
+    }
+    41%,60%{
+        content: "Back-end Developer";
+    }
+    61%,80%{
+        content: "Subject Matter Expert";
+    }
+    81%,100%{
+        content: "Back-end Developer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
