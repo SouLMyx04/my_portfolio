@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.a220fc3e.css",
+    "main.js": "/my_portfolio/static/js/main.f589972c.js",
+    "static/media/payment_gateway.mp4": "/my_portfolio/static/media/payment_gateway.ea5ac366900cb1f5d123.mp4",
+    "static/media/map_navigation.mp4": "/my_portfolio/static/media/map_navigation.3383600236b42277736a.mp4",
+    "static/media/responsive_website.mp4": "/my_portfolio/static/media/responsive_website.cf9cd33aa9aad0b97931.mp4",
+    "static/media/cruds.mp4": "/my_portfolio/static/media/cruds.cda27ab1c1cda85ccdc1.mp4",
+    "static/media/heart.png": "/my_portfolio/static/media/heart.accef500d7f1f787b32d.png",
+    "static/media/avatar.jpg": "/my_portfolio/static/media/avatar.5f3ac9e6490e6fa05595.jpg",
+    "static/media/raffy.png": "/my_portfolio/static/media/raffy.6b5f028ba710ac234aff.png",
+    "static/media/wallpaper.jpg": "/my_portfolio/static/media/wallpaper.216942776228ea882317.jpg",
+    "static/media/ReactJS.png": "/my_portfolio/static/media/ReactJS.409fd89ac9f5cf9d328a.png",
+    "static/media/CSS.png": "/my_portfolio/static/media/CSS.1bebe47e82dc7f7f8901.png",
+    "static/media/Bootstrap.png": "/my_portfolio/static/media/Bootstrap.83e6d155a51ce1ca270f.png",
+    "static/media/Mongodb.png": "/my_portfolio/static/media/Mongodb.d52d063b37493b376b11.png",
+    "static/media/PHP.png": "/my_portfolio/static/media/PHP.8aef6b24e31b03d2ccb3.png",
+    "static/media/JavaScript.png": "/my_portfolio/static/media/JavaScript.66d4f3538958a474c34d.png",
+    "static/media/Git.png": "/my_portfolio/static/media/Git.1b02bfe987f92bb61cfe.png",
+    "static/media/HTML.png": "/my_portfolio/static/media/HTML.14afe00b5190d86e1f1f.png",
+    "static/media/GitHub.png": "/my_portfolio/static/media/GitHub.871407f5e0854fc475d5.png",
+    "index.html": "/my_portfolio/index.html",
+    "main.a220fc3e.css.map": "/my_portfolio/static/css/main.a220fc3e.css.map",
+    "main.f589972c.js.map": "/my_portfolio/static/js/main.f589972c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a220fc3e.css",
+    "static/js/main.f589972c.js"
+  ]
+}
